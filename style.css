@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* https://css-tricks.com/how-do-you-do-max-font-size-in-css/ */
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  text-align: center;
+  font-size: min(max(20px, 4vw), 30px);
+
+}
+/* https://www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/ */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: beige;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.flexContainer {
+  display: flex;
+}
+.flexContainer > li {  
+  flex: 1;  
+}
+@media all and (max-width: 600px) {  
+  .flexContainer > li {  
+    flex-basis: 50%;  
+  }  
+}
+@media all and (max-width: 400px) {  
+  .flexContainer > li {  
+    flex-basis: 100%;  
+  }  
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* https://coryrylan.com/blog/how-to-center-in-css-with-flexbox */
+.p-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+p {
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+
+
+}
+
+
